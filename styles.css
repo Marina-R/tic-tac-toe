@@ -1,0 +1,61 @@
+/*GENERAL STYLES*/
+html,
+body,
+#main {
+    font-family: 'Trebuchet MS', 'Open Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+}
+#playBoardWindow,
+#homeScreen {
+    display: none;
+}
+.active#playBoardWindow,
+.active#homeScreen {
+    display: block;
+    align-self: center;
+}
+#gameName {
+    text-align: center;
+    font-size: 30px;
+}
+.choosePlayerBtn,
+.playBoardBtn {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/*HOME WINDOW*/
+.choosePlayerBtn {
+    height: 35px;
+    width: 150px;
+    margin: 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #836a9e;
+}
+.choosePlayerBtn:hover {
+    color: #000;
+    background-color: #b9b6b6;
+}
+
+/*PLAY BOARD BUTTON*/
+.playBoardBtn {
+    height: 45px;
+    width: 45px;
+    background-color: #cacaca;
+    background-size: cover;
+}
+.playBoardBtn.x {
+    background-image: url(content/x_mark.png) ;
+}
+.playBoardBtn.o {
+    background-image: url(content/o_mark.png) ;
+}
